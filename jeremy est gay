@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        @keyframes flash {
+            0% { color: red; }
+            25% { color: blue; }
+            50% { color: green; }
+            75% { color: orange; }
+            100% { color: purple; }
+        }
+
+        @keyframes moveRandomly {
+            0%, 100% { transform: translate(0, 0); }
+            25% { transform: translate(200px, -200px); }
+            50% { transform: translate(-200px, 200px); }
+            75% { transform: translate(200px, 200px); }
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+
+        p {
+            font-size: 80px; /* Changer la taille du texte (par exemple, 24 pixels) */
+            color: red; /* Changer la couleur du texte (par exemple, rouge) */
+            animation: flash 4s infinite, moveRandomly 4s infinite; /* Ajouter l'animation de clignotement et de déplacement */
+            position: absolute; /* Position absolue pour que le texte se déplace librement */
+        }
+    </style>
+</head>
+<body>
+    <p> <strong> JEREMY EST GAY</strong></p>
+</body>
+</html>
